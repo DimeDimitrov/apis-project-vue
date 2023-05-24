@@ -3,6 +3,9 @@
     <nav class="text-lg flex gap-6">
       <router-link to="/">Home</router-link>
       <router-link to="/cat">Cat Facts</router-link>
+      <router-link to="/joke">Jokes</router-link>
+      <router-link to="/cat">Cat Facts</router-link>
+      <router-link to="/cat">Cat Facts</router-link>
     </nav>
   </div>
 </template>
