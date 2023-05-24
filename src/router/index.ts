@@ -9,7 +9,11 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
-   
+    {
+      path: '/cat',
+      name: 'cat',
+      component: () => import('../views/CatView.vue')
+    }
   ]
 })
 

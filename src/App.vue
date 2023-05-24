@@ -1,20 +1,19 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
-  <header>
-      <div class="bg-red-500">Hello world</div>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    
-  </header>
-
-  <RouterView />
+  <div class="flex flex-col items-center justify-center h-20 gap-10">
+    <Navbar />
+  </div>
+  <div class="flex flex-col items-center justify-center h-20 gap-10">
+    <router-view />
+  </div>
 </template>
 
-<style scoped>
+<script lang="ts">
+import Navbar from './components/Navbar.vue'
 
-</style>
+export default {
+  name: 'App',
+  components: {
+    Navbar
+  }
+}
+</script>
