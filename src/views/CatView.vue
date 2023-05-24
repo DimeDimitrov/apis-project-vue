@@ -8,7 +8,7 @@
     </button>
   </div>
   <div class="flex flex-col p-10 justify-center items-center">
-    <p v-if="randomFact" class="text-white text-3xl">{{ randomFact }}</p>
+    <p v-if="randomFact" class="text-white text-3xl max-w-4xl m-10">{{ randomFact }}</p>
 
     <img
       v-if="randomCatImage"
