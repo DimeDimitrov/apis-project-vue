@@ -2,9 +2,8 @@
   <div class="flex flex-col items-center justify-center h-20 gap-10">
     <Navbar />
   </div>
-  <div class="flex flex-col items-center justify-center h-20 gap-10">
-    <router-view />
-  </div>
+
+  <router-view />
 </template>
 
 <script lang="ts">
