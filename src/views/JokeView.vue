@@ -1,8 +1,16 @@
 <template>
-  <div>
-    <button @click="getRandomFact">Get Random Joke</button>
+  <div class="flex text-white justify-center items-center flex-col text-3xl">
+    <button @click="getRandomFact" class="m-10 bg-slate-500 border-slate-800-2 p-4 w-fit mt-10">
+      Get Random Joke
+    </button>
     <p v-if="setup">{{ setup }}</p>
-    <button @click="togglePunchlineDisplay">Click me!</button>
+    <button
+      v-if="setup"
+      @click="togglePunchlineDisplay"
+      class="m-10 bg-slate-500 border-slate-800-2 p-4 w-fit mt-10"
+    >
+      Show Punchline
+    </button>
     <p v-if="punchlineDisplay">{{ punchline }}</p>
   </div>
 </template>
